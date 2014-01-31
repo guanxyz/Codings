@@ -1,11 +1,11 @@
 CC=gcc
-all=test
+all=hammingweight
 
-test: floatpoint.o
-	$(CC) floatpoint.o -o test
+hammingweight: hammingweight.o
+	$(CC) hammingweight.o -o hammingweight
 
-floatpoint.o: floatpoint.c
-	$(CC) -c floatpoint.c
+hammingweight.o: hammingweight.c
+	$(CC) -c hammingweight.c
 
 clean:
-	rm -rf *o test
+	rm -rf *o hammingweight

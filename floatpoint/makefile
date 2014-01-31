@@ -1,8 +1,8 @@
 CC=gcc
 all=test
 
-test: floatpoint.o
-	$(CC) floatpoint.o -o test
+floatpoint: floatpoint.o
+	$(CC) floatpoint.o -o floatpoint
 
 floatpoint.o: floatpoint.c
 	$(CC) -c floatpoint.c
